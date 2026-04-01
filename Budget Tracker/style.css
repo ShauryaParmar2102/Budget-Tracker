@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    background-color: blue;
+    color: black;
+    line-height: 1.6;
+}
+
+.app-container{
+    display: flex;
+    gap: 2rem;
+    width: 100%;
+     max-width: 1200px;
+     margin: 2rem auto;
+}
+
+.input-container{
+    flex: 1;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+    padding: 2rem;
+    height: fit-content;
+}
+
+.transactions-container{
+    flex: 1;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+    padding: 2rem;
+    max-height: 560px;
+    overflow-y: auto;
+}
+
+.header{
+    text-align: center;
+    margin-bottom: 1.6reml;
+}
+
+.header h1{
+    font-size: 2rem;
+    font-weight: 700;
+    color: black;
+}
+
+#balance {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin: 1.5rem 0;
+}
+
+#transactionForm{
+    display: grid;
+    gap: 1rem;
+}
+
+input,
+select,
+button{
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid black;
+    border-radius: 8px;
+}
+
+input:focus,
+select:focus {
+    outline: none;
+    border-color: blue;
+    box-shadow: 0 0 0 3px rgb(69, 135, 210);
+}
+
+button {
+    background-color: blue;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-weight: 600px;
+    transition: all 300ms ease;
+}
+
+button:hover{
+    background: red;
+    transform: translateY(-2px);
+}
+
+.transaction {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    border-radius: 8px;
+    margin-bottom: 0.5rem;
+    transition: all 300ms ease;
+}
+
+.transaction.income {
+    background-color: rgba(46, 204, 113, 0.1);
+}
+
+.transaction.expense {
+    background-color: rgba(231, 76, 60, 0.1);
+}
+
+.transaction:hover{
+    background-color: brown;
+}
+
+.transaction-amount-container{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.delete-btn{
+    background-color: red;
+    padding: 8px;
+    font-size: 0.8rem;
+    border-radius: 4px;
+}
+
+.delete-btn:hover{
+    background-color: blueviolet;
+}
